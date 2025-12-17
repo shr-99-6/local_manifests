@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="Aflaungos/android_device_samsung_m23xq" path="device/samsung/m23xq" remote="github" revision="lineage-21" />
-  <project name="Aflaungos/android_device_samsung_sm7225-common" path="device/samsung/sm7225-common" remote="github" revision="lineage-21" />
+  <!-- Device Tree (The phone's configuration) -->
+  <project name="Aflaungos/android_device_samsung_m23xq" path="device/samsung/m23xq" remote="github" revision="lineage-23.0" />
+  
+  <!-- Common Device Tree (Shared code for Snapdragon 750G) -->
+  <project name="Aflaungos/android_device_samsung_sm7225-common" path="device/samsung/sm7225-common" remote="github" revision="lineage-23.0" />
 
-  <project name="Aflaungos/android_kernel_samsung_sm7225" path="kernel/samsung/sm7225" remote="github" revision="lineage-21" />
+  <!-- Kernel Source (The engine) -->
+  <project name="Aflaungos/android_kernel_samsung_sm7225" path="kernel/samsung/sm7225" remote="github" revision="lineage-23.0" />
 
-  <project name="Aflaungos/android_vendor_samsung_m23xq" path="vendor/samsung/m23xq" remote="github" revision="lineage-21" />
-  <project name="Aflaungos/android_vendor_samsung_sm7225-common" path="vendor/samsung/sm7225-common" remote="github" revision="lineage-21" />
+  <!-- Device Vendor (Specific drivers for F23/M23) -->
+  <project name="Aflaungos/android_vendor_samsung_m23xq" path="vendor/samsung/m23xq" remote="github" revision="lineage-23.0" />
 
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-21" />
+  <!-- Common Vendor (Shared drivers) -->
+  <project name="Aflaungos/android_vendor_samsung_sm7225-common" path="vendor/samsung/sm7225-common" remote="github" revision="lineage-23.0" />
+
+  <!-- Hardware (Samsung specific HALs) -->
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-23.0" />
 </manifest>
